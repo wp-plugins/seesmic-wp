@@ -1,0 +1,9 @@
+Seesmic
+
+Copyright (c) 2008 Seesmic, llc
+
+Information about Seesmic can be found at:
+
+    http://seesmic.com
+
+License information is in the LICENSE.txt file
