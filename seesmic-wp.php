@@ -5,7 +5,7 @@ Plugin URI: http://wiki.seesmic.com/Wp-plugin
 Author URI: http://blog.seesmic.com/
 Description: Enables Seesmic video in wordpress.
 Author: Seesmic Inc
-Version: 0.1.4
+Version: 0.1.5
 
 Copyright (c) 2008 Seesmic, llc
 License information is in the LICENSE.txt file

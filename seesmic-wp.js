@@ -4,8 +4,6 @@
 // Copyright (c) 2008 Seesmic, llc
 // License information is in the LICENSE.txt file
 // 
-// Version: 0.1.2
-//
 function see_set_comment_mode(_mode, _recState, _title ) {
 	flashcontentDiv = document.getElementById("flashcontent");
 	buttonsDiv = document.getElementById("see_buttons_div");
