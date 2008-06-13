@@ -5,7 +5,7 @@ Requires at least: 2.1
 Tested up to: 2.5
 Stable tag: 0.1.4
 
-The Seesmic plugin allows for video comments to be added to your Wordpress blog.
+The Seesmic plugin allows for video comments to be added to your WordPress blog.
 
 == Description ==
 
