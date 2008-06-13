@@ -3,7 +3,7 @@ Contributors: Seesmic
 Tags: comments, video, seesmic
 Requires at least: 2.1
 Tested up to: 2.5
-Stable tag: 0.1.4
+Stable tag: 0.1.5
 
 The Seesmic plugin allows for video comments to be added to your WordPress blog.
 
@@ -36,6 +36,43 @@ NOTE: In the "Comment Moderation" options, "Hold a comment in the queue if it co
       must be set to 3 or more.
 
 == Frequently Asked Questions ==
+
+= To post a video =
+
+1. Visit "Write > Post >" scroll past the post box and click the
+   "Add a video to your post with Seesmic".
+2. A video recorder window will open asking for your Seesmic
+   username and password. Once you login you will be able to record
+   a video. Otherwise, you can register for a Seesmic account,
+   or (if allowed) post anonymously.
+3. Once you have recorded for at least 5 seconds, you will see the
+   "Save and Post it" or "Record again". 
+
+The video will be posted in the content area of your post. You can add
+text, tags, categories, etc. before publishing.
+
+= To post a comment =
+
+Users will go through almost the same process as when posting a video.
+
+NOTE: If you have any required fields, i.e. "name" and "email", those fields
+will stillbe required for a Seesmic video comment.
+
+= To moderate a comment =
+
+If you have moderation turned off, your reader's Seesmic comment will be posted immediately.
+
+With moderation turned on, you will moderate the video comment the same way
+you would moderate a text comment.
+
+= Uninstall =
+
+To uninstall, simply disable the plugin in your dashboard before removing the
+plugin files from your plugins directory.
+
+NOTE: If you uninstall the plugin, the code for displaying the video will still
+be displayed in posts and/or comments. At this point, those will need to be
+deleted and/or moderated manually.
 
 = I use a custom theme, will I have any troubles? =
 
