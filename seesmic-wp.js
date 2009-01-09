@@ -1,7 +1,9 @@
 //
 // Seesmic WordPress plugin
 // 
-// Copyright (c) 2008 Seesmic, llc
+// Copyright (c) 2008,2009 Seesmic, Inc
+// All Rights Reserved
+//
 // License information is in the LICENSE.txt file
 // 
 function see_set_comment_mode(_mode, _recState, _title ) {

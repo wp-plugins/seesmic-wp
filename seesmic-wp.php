@@ -3,11 +3,11 @@
 Plugin Name: Seesmic WordPress plugin
 Plugin URI: http://wiki.seesmic.com/Wp-plugin
 Author URI: http://blog.seesmic.com/
-Description: Enables Seesmic video in wordpress.
+Description: Enables Seesmic video in WordPress.
 Author: Seesmic Inc
-Version: 0.1.5
+Version: 0.1.6
 
-Copyright (c) 2008 Seesmic, llc
+Copyright (c) 2008,2009 Seesmic, Inc
 License information is in the LICENSE.txt file
 */
 ?>
@@ -152,19 +152,11 @@ function see_comment_form_action($postId='') {
 	<div id="see_buttons_div">
 		<a onclick="see_set_comment_mode('videoRec','comment')" class="see_buttons_add">Or add a Video Comment</a>
 		<div class="see_buttons_and"> with</div>
-		<a href="http://wiki.seesmic.com/Wp-plugin" target="_blank"><img alt="Seesmic Logo" src="<?php echo get_option('siteurl'). '/' ?>wp-content/plugins/seesmic-wp/images/raccoon.png" width="130" height="41" style="cursor:pointer; cursor:hand;"/></a>
+		<a href="http://www.seesmic.com" target="_blank"><img alt="Seesmic Logo" src="<?php echo get_option('siteurl'). '/' ?>wp-content/plugins/seesmic-wp/images/raccoon.png" width="130" height="41" style="cursor:pointer; cursor:hand;"/></a>
 	</div>
 	<div id="flashcontent" ></div>
 	<a onclick="see_set_comment_mode('text','comment')" id="see_back_button">&laquo; Back to text comment</a>	
 	<script type="text/javascript">commentReplyId=0; setInterval("checkCommentReplyChange()",500);</script>
-<?php }?>
-<?php 
-	if(get_option("see_disable_plugin")==false && get_option("see_disable_post_videos")==true) {
-?>
-	<!--[if lt IE 7]><style type="text/css">.seePlayOverlay {background:url(<?php echo get_option('siteurl') ?>/wp-content/plugins/seesmic-wp/images/playOverlay.gif)!important}</style><![endif]-->
-	<script type="text/javascript" src="<?php echo get_option('siteurl'). '/' ?>wp-content/plugins/seesmic-wp/seesmic-wp.js"></script>
-	<link href="<?php echo get_option('siteurl'). '/' ?>wp-content/plugins/seesmic-wp/seesmic-wp.css" rel="stylesheet" type="text/css" />
-
 <?php }} ?>
 <?php
 
@@ -180,7 +172,7 @@ function see_edit_form_advanced_action($text='') {
 	<div id="see_buttons_div">
 		<a onclick="see_set_comment_mode('videoRec','post')" class="see_buttons_add">Add a video to your post</a>
 		<div class="see_buttons_and"> with</div>
-		<a href="http://wiki.seesmic.com/Wp-plugin" target="_blank" style=" float:left"><img alt="Seesmic Logo" src="<?php echo get_option('siteurl'). '/' ?>wp-content/plugins/seesmic-wp/images/raccoon.png" width="130" height="41" onclick="see_set_comment_mode('videoRec','post')" style="cursor:pointer; cursor:hand;"/></a>
+		<a href="http://www.seesmic.com" target="_blank" style=" float:left"><img alt="Seesmic Logo" src="<?php echo get_option('siteurl'). '/' ?>wp-content/plugins/seesmic-wp/images/raccoon.png" width="130" height="41" onclick="see_set_comment_mode('videoRec','post')" style="cursor:pointer; cursor:hand;"/></a>
 	</div>
 	
 	
@@ -257,6 +249,13 @@ function see_comment_text_filter($_text='') {
 ?>
 <?php
 function see_comments_array_filter($_comments) {
+	if(get_option("see_disable_plugin")==false && get_option("see_disable_post_videos")==true) {
+?>
+	<!--[if lt IE 7]><style type="text/css">.seePlayOverlay {background:url(<?php echo get_option('siteurl') ?>/wp-content/plugins/seesmic-wp/images/playOverlay.gif)!important}</style><![endif]-->
+	<script type="text/javascript" src="<?php echo get_option('siteurl'). '/' ?>wp-content/plugins/seesmic-wp/seesmic-wp.js"></script>
+	<link href="<?php echo get_option('siteurl'). '/' ?>wp-content/plugins/seesmic-wp/seesmic-wp.css" rel="stylesheet" type="text/css" />
+<?php 
+	}
 	$comments_list="";
 	if(get_option("see_disable_plugin")==false) {
 		$comments_result = $_comments;

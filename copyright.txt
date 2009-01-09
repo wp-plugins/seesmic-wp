@@ -1,9 +1,11 @@
 Seesmic
 
-Copyright (c) 2008 Seesmic, llc
+Copyright (c) 2008,2009 Seesmic, Inc
+All Rights Reserved
+
+License information is in the LICENSE.txt file
 
 Information about Seesmic can be found at:
 
     http://seesmic.com
 
-License information is in the LICENSE.txt file

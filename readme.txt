@@ -3,7 +3,7 @@ Contributors: Seesmic
 Tags: comments, video, seesmic
 Requires at least: 2.1
 Tested up to: 2.5
-Stable tag: 0.1.5
+Stable tag: 0.1.6
 
 The Seesmic plugin allows for video comments to be added to your WordPress blog.
 
@@ -34,8 +34,6 @@ official WordPress plugin site.  So be careful you keep the "seesmic-wp" version
 
 NOTE: In the "Comment Moderation" options, "Hold a comment in the queue if it contains x or more links"
       must be set to 3 or more.
-
-== Operation ==
 
 == Frequently Asked Questions ==
 
